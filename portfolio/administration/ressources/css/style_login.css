@@ -1,0 +1,98 @@
+/*dégradé de l'arrière plan*/
+body {
+    background: radial-gradient(circle at center,#ffffff, #555555);
+}
+
+h1 {
+    text-align: center;
+}
+
+/*Personnalisation de la bannière*/
+.banniere-alerte {
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.25rem;    
+    display: block;
+    border: 2px solid black;
+    justify-content: space-between;
+    align-items:center;
+}
+
+/*Personnalisation de la bannière en cas de succès*/
+.banniere-alerte.succes {
+    border-color: #c3e6cb;
+    background-color: #D4EDDA;
+    color: #155724;
+    align-items:center;
+}
+
+/*Personnalisation de la bannière en cas d'erreur*/
+.banniere-alerte.erreur {
+    border-color: #F5C6CB;
+    background-color: #F8D7DA;
+    color: #721C24;
+    align-items:center;
+}
+
+
+/*Cacher la bannière*/
+.banniere.cache {
+    display: none;
+
+}
+
+/*Positionnement de la section du formulaire*/
+.section-formulaire {
+    position: absolute; 
+    width: 300px; 
+    height: 150px; 
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right: 0; 
+    margin: auto; 
+}
+
+
+/*Postionnement et personnalisation du formulaire*/
+form {
+    position: absolute;
+    top:0; 
+    bottom:0; 
+    left:0; 
+    right: 0; 
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column(2);
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px rgb(105, 105, 105);
+}
+
+/*Personnalistation du bouton 'se connecter'*/
+.bouton-connecter {
+    background: #797979;
+    width: 5rem;
+    height: 5rem;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 100%;
+    text-align: center;
+    float: right;
+    padding-right: 10px;
+    transition-duration: 1.5s;
+}
+
+/*Personnalistation du bouton 'se connecter' au survol*/
+.bouton-connecter:hover {
+    background: #101010;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 100%;
+    text-shadow:none;
+
+}
+
